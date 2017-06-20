@@ -2,6 +2,6 @@ body{
   background-color: rgb(170, 166, 230);
 }
 
-#slider-img{
-  width: 100%
+button{
+  background-color: rgb(251, 212, 59)!important;
 }
