@@ -3,5 +3,6 @@ body{
 }
 
 button{
+  padding: 10px;
   background-color: rgb(251, 212, 59)!important;
 }
