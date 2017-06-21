@@ -9,7 +9,7 @@ const Screen2 = (update) =>{
   const divForm = $('<div class="row"></div>');
   const form = $('<form class="col s12"><div class="row"></div></form>');
   const divInput = $('<div class="input-field col s12"></div>');
-  const input = $('<input id="icon_telephone" type="number" pattern="^[9]\d{8}$" class="validate">');
+  const input = $('<input id="icon_telephone" type="tel" maxlength="9" class="validate">');
   const chBox = $('<p><input type="checkbox" id="term"/><label for="term">Acepto los <a>Términos y condiciones.</a></label></p>')
   const btn = $('<button class="btn waves-effect waves-light" type="submit" name="action" disabled>CONTINUAR</button>');
 
@@ -29,8 +29,16 @@ const Screen2 = (update) =>{
   divInput.append(chBox);
   divInput.append(btn);
 
+
   chBox.on("click",function(){
   btn.removeAttr("disabled");
+  });
+
+  btn.on('click',(e)=>{
+    e.preventDefault();
+    state.screen2 = null;
+    state.screen3 = true;
+    update();
   });
 
   return container;
