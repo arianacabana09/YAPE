@@ -9,7 +9,7 @@ const render = (root) =>{
     wrapper.append(Screen1(_ => render(root)));
   } else{
     console.log("hola screen2");
-    // wrapper.append(Screen2(_ => render(root)));
+    wrapper.append(Screen2(_ => render(root)));
   }
   root.append(wrapper);
 }
