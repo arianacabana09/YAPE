@@ -1,5 +1,5 @@
 html{
-  background-color: rgb(177, 89, 89);
+  background-color: rgb(255, 255, 255);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -12,16 +12,22 @@ section, .wrapper{
 }
 
 #sliderIntro{
-  height: 600px!important;
+  box-sizing: border-box;
+  height: 500px!important;
+}
+
+#btn{
+  position: absolute;
+  bottom: 100px;
 }
 
 button{
-  padding: 10px;
+  width: 350px;
   background-color: rgb(251, 212, 59)!important;
 }
 
-#slider, #slider2, #slider3{
+
+#slider1, #slider2, #slider3{
   box-sizing: border-box;
   padding: 20px;
-  overflow: scroll;
 }
