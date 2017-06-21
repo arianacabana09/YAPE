@@ -7,7 +7,7 @@ const Screen1 = (update) =>{
   const texto2 = $('<h5><strong>Sin número de cuenta</strong></h5><p>Elige a quién pagar desde tu lista de contactos</p>');
   const slider3 = $('<div id="slider3" class="col s12 carousel-item center"><img src="img/icons/group-people.png" alt="slider3"></div>');
   const texto3 = $('<h5><strong>Gratis y seguro</strong></h5><p>La transferencia es inmediata y gratuita de una cuenta a otra</p>');
-  const btn = $('<div id="btn" class="center col s12"><button class=" btn waves-effect waves-light" type="submit" name="action">REGISTRARME</button></div>');
+  const btn = $('<div id="btn" class="center col s12"><button class="btn waves-effect waves-light" type="submit" name="action">REGISTRARME</button></div>');
 
   $('#root').append(sliderIntro);
   slider1.append(texto1);

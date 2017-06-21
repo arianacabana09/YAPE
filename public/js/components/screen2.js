@@ -10,7 +10,8 @@ const Screen2 = (update) =>{
   const form = $('<form class="col s12"><div class="row"></div></form>');
   const divInput = $('<div class="input-field col s12"></div>');
   const input = $('<input id="icon_telephone" type="number" pattern="^[9]\d{8}$" class="validate">');
-  const btn = $('<button class="btn waves-effect waves-light" type="submit">CONTINUAR</button>');
+  const chBox = $('<p><input type="checkbox" id="term"/><label for="term">Acepto los <a>Términos y condiciones.</a></label></p>')
+  const btn = $('<button class="btn waves-effect waves-light" type="submit" name="action" disabled>CONTINUAR</button>');
 
   // div principal
   $('#root').append(container);
@@ -25,7 +26,12 @@ const Screen2 = (update) =>{
   divForm.append(form);
   form.append(divInput);
   divInput.append(input);
+  divInput.append(chBox);
   divInput.append(btn);
+
+  chBox.on("click",function(){
+  btn.removeAttr("disabled");
+  });
 
   return container;
 }
