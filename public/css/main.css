@@ -1,8 +1,27 @@
-body{
-  background-color: rgb(170, 166, 230);
+html{
+  background-color: rgb(177, 89, 89);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section, .wrapper{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+}
+
+#sliderIntro{
+  height: 600px!important;
 }
 
 button{
   padding: 10px;
   background-color: rgb(251, 212, 59)!important;
+}
+
+#slider, #slider2, #slider3{
+  box-sizing: border-box;
+  padding: 20px;
+  overflow: scroll;
 }
