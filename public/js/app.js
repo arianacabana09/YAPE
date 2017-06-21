@@ -13,7 +13,11 @@ const render = (root) =>{
   } else if (state.screen3 != null) {
     console.log("hola screen3");
     wrapper.append(Screen3(_ => render(root)));
+  } else if (state.screen4 !=null) {
+    console.log("hola screen4");
+    wrapper.append(Screen4(_ => render(root)));
   }
+  
   root.append(wrapper);
 }
 

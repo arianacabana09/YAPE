@@ -24,5 +24,14 @@ const Screen3 = (_=>{
   form.append(input);
   form.append(label);
 
+  input.keypress(function(e){
+    if(e.which == 13){
+      e.preventDefault();
+      state.screen3 = null;
+      state.screen4 = true;
+    }
+    update();
+  });
+
   return container;
 });
