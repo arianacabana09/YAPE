@@ -32,9 +32,16 @@ button{
   padding: 20px;
 }
 
-input{
+#icon_telephone{
   background: url("../img/icons/phoneandnumber.png") no-repeat;
   background-size: 80px 30px;
   text-align: center;
   margin: 0;
+}
+#code{
+  background: url("../img/icons/lock.png") no-repeat;
+  background-size: 30px 30px;
+  text-align: center;
+  margin: 0;
+  font-size: 1.2rem;
 }

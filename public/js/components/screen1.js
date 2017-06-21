@@ -19,7 +19,7 @@ const Screen1 = (update) =>{
   sliderIntro.append(slider3);
 
   $('#root').append(btn);
-  
+
   btn.on('click',(e)=>{
     e.preventDefault();
     state.screen1 = false;

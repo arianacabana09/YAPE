@@ -1,6 +1,6 @@
 const Screen2 = (update) =>{
 
-  const container = $('<div></div>');
+  const container = $('<div ></div>');
 
   const div = $('<div class="row"></div>');
   const image = $('<img src="img/icons/phone.png">');
