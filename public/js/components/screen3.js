@@ -23,6 +23,7 @@ const Screen3 = (update) =>{
   divForm.append(form);
   form.append(input);
   form.append(label);
+  console.log('codigo: 12345');
 
   input.on('keyup', (e) => {
     // if(input.val() == state.code){

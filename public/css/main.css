@@ -71,3 +71,7 @@ button{
   margin: 0;
   font-size: 1.2rem;
 }
+
+.bg-yellow{
+  background-color: #fbd43b;
+}
