@@ -1,4 +1,4 @@
-const Screen3 = (_=>{
+const Screen3 = ((update)=>{
   const container = $('<div class="container"></div>')
 
   const div = $('<div class="row"></div>');
@@ -24,14 +24,14 @@ const Screen3 = (_=>{
   form.append(input);
   form.append(label);
 
-  input.keypress(function(e){
-    if(e.which == 13){
+  input.on('keyup', (e) => {
+    // if(input.val() == state.code){
+    if(input.val() === "12345"){
       e.preventDefault();
       state.screen3 = null;
       state.screen4 = true;
+      update();
     }
-    update();
   });
-
   return container;
 });
