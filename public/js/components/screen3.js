@@ -1,14 +1,14 @@
-const Screen3 = ((update)=>{
-  const container = $('<div class="container"></div>')
+const Screen3 = (update) =>{
+  const container = $('<div class="container center-align"></div>')
 
   const div = $('<div class="row"></div>');
-  const img = $('<img src="img/icons/message.png">');
+  const img = $('<img class="img-intro" src="img/icons/message.png">');
   const text = $('<h5><strong>Ahora ingresa tu código</strong></h5><p>Enviamos un SMS con el código de validación al número</p>+"phone"');
 
   const divForm =$('<div class="row"></div>');
-  const form = $('<form class="input-field col s12"><form>');
+  const form = $('<form class="input-field col s12"></form>');
   const input=$('<input id="code" type="tel" maxlength="5" class="validate" placeholder=" - - - - - ">');
-  const label = $('<label>Reintentar en <img src="img/icons/clock.png"></label>')
+  const label = $('<span>Reintentar en <img src="img/icons/clock.png"></span>')
 
   $('#root').append(container);
 
@@ -34,4 +34,4 @@ const Screen3 = ((update)=>{
     }
   });
   return container;
-});
+}

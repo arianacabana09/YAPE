@@ -1,9 +1,9 @@
-const Screen2 = (update) =>{
+const Screen2 = (update) => {
 
-  const container = $('<div ></div>');
+  const container = $('<div class="center-align"></div>');
 
   const div = $('<div class="row"></div>');
-  const image = $('<img src="img/icons/phone.png">');
+  const image = $('<img class="img-intro" src="img/icons/phone.png">');
   const text = $('<h5><strong>Para comenzar validemos tu número</strong></h5><p>Recebirás un SMS con un código de validación</p>');
 
   const divForm = $('<div class="row"></div>');
@@ -30,8 +30,8 @@ const Screen2 = (update) =>{
   divInput.append(btn);
 
 
-  chBox.on("click",function(){
-  btn.removeAttr("disabled");
+  chBox.on("click",()=>{
+    btn.removeAttr("disabled");
   });
 
   btn.on('click',(e)=>{

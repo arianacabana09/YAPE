@@ -26,6 +26,11 @@ button{
   background-color: rgb(251, 212, 59)!important;
 }
 
+.img-intro{
+  margin-top: 50px;
+  width: 100px;
+  height: 80px;
+}
 
 #slider1, #slider2, #slider3{
   box-sizing: border-box;
@@ -41,6 +46,27 @@ button{
 #code{
   background: url("../img/icons/lock.png") no-repeat;
   background-size: 30px 30px;
+  text-align: center;
+  margin: 0;
+  font-size: 1.2rem;
+}
+#name{
+  background: url("../img/icons/user.png") no-repeat;
+  background-size: 20px 20px;
+  text-align: center;
+  margin: 0;
+  font-size: 1.2rem;
+}
+#email{
+  background: url("../img/icons/message-gray.png") no-repeat;
+  background-size: 20px 20px;
+  text-align: center;
+  margin: 0;
+  font-size: 1.2rem;
+}
+#password{
+  background: url("../img/icons/lock.png") no-repeat;
+  background-size: 20px 20px;
   text-align: center;
   margin: 0;
   font-size: 1.2rem;
