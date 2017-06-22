@@ -39,6 +39,11 @@ const Screen4 = (update) =>{
   divPsw.append(inputPsw);
   divPsw.append(spanPsw);
 
-  // update();
+  btn.on('click',(e)=>{
+    e.preventDefault();
+    state.screen4 = null;
+    state.screen5 = true;
+    update();
+  });
   return container;
 }
